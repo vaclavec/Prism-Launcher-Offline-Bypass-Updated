@@ -6,8 +6,8 @@ Bypass check if user has a real Microsoft account linked with the launcher<br>
 # Before Installation
 If you have some accounts saved then executing this script will remove them! Don't forget to backup your "accounts.json" file if needed!
 
-# How to use
-- Install Prism Launcher (or go portable✨)
+# How to use (the best option is to copy paste an already created file in this repo)
+- Install PrismLauncher ( ✨ or go portable ✨ ) or its derivative (for that you need to edit these scripts)
 - Execute the command for the appropriate bypass (see [below](#usage-for-installer))
 - ❤️‍🔥 Change "YOUR-NICKNAME" in the "accounts.json" to your desired nickname ❤️‍🔥
 - Enjoy!
