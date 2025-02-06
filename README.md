@@ -22,7 +22,7 @@ This launcher use a file called "accounts.json" which stores information about u
 For that luxury you can use Ely.by skin system on the [ElyPrismLauncher](https://github.com/Octol1ttle/ElyPrismLauncher)
 
 # Usage for Installer
-Download the latest version of Prism Launcher from https://prismlauncher.org/, install it, then execute this command in the terminal:
+Download the latest version of PrismLauncher from https://prismlauncher.org/, install it, then execute this command in the terminal:
 ### Windows CMD:
 ```
 echo { "accounts": [ { "entitlement": { "canPlayMinecraft": true, "ownsMinecraft": true }, "msa-client-id": "", "type": "MSA" }, { "active": true, "profile": { "capes": [ ], "id": "0c79d88a112537a0a302f01afa6bc94a", "name": "YOUR-NICKNAME", "skin": { "id": "", "url": "", "variant": "" } }, "type": "Offline", "ygg": { "extra": { "clientToken": "8be89b1112474b5fb8f061699ff41bda", "userName": "YOUR-NICKNAME" }, "iat": 1738858981, "token": "0" } } ], "formatVersion": 3 } > %appdata%/PrismLauncher/accounts.json
@@ -41,7 +41,7 @@ echo '{ "accounts": [ { "entitlement": { "canPlayMinecraft": true, "ownsMinecraf
 ```
 
 # Usage for Portable version
-Download the portable version of [Prism Launcher](https://prismlauncher.org/), then execute this command in the terminal of the root folder:
+Download the portable version of [PrismLauncher](https://prismlauncher.org/), then execute this command in the terminal of the root folder:
 ### Windows Portable (cd to installation path) CMD:
 ```
 echo { "accounts": [ { "entitlement": { "canPlayMinecraft": true, "ownsMinecraft": true }, "msa-client-id": "", "type": "MSA" }, { "active": true, "profile": { "capes": [ ], "id": "0c79d88a112537a0a302f01afa6bc94a", "name": "YOUR-NICKNAME", "skin": { "id": "", "url": "", "variant": "" } }, "type": "Offline", "ygg": { "extra": { "clientToken": "8be89b1112474b5fb8f061699ff41bda", "userName": "YOUR-NICKNAME" }, "iat": 1738858981, "token": "0" } } ], "formatVersion": 3 } > accounts.json
