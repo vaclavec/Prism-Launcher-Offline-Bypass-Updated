@@ -1,7 +1,7 @@
-# About this fork of a project
+# About
 Bypass check if user has a real Microsoft account linked with the launcher<br>
 
-⚠️ This is for entertainment purposes only ⚠️
+⚠️⚠️⚠️ This is for entertainment and research purposes only ⚠️⚠️⚠️
 
 # Before Installation
 If you have some accounts saved then executing this script will remove them! Don't forget to backup your "accounts.json" file if needed!
