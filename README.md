@@ -9,6 +9,7 @@ If you have some accounts saved then executing this script will remove them! Don
 # How to use
 - Install Prism Launcher (or go portable✨)
 - Execute the command for the appropriate bypass (see [below](#usage-for-installer))
+- ❤️‍🔥 Change "YOUR-NICKNAME" in the "accounts.json" to your desired nickname ❤️‍🔥
 - Enjoy!
 
 # What not to do
