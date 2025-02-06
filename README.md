@@ -1,12 +1,10 @@
-# About this project
+# About this fork of a project
 Bypass check if user has a real Microsoft account linked with the launcher<br>
+
 ⚠️ This is for entertainment purposes only ⚠️
 
-# This launcher is too complicated for me :(
-You can try out my other project [Offline Minecraft Launcher](https://github.com/antunnitraj/OfflineMinecraftLauncher)
-
 # Before Installation
-If you have some accounts saved then executing this script will remove them!
+If you have some accounts saved then executing this script will remove them! Don't forget to backup your "accounts.json" file if needed!
 
 # How to use
 - Install Prism Launcher
@@ -30,30 +28,264 @@ For that luxury you can use Ely.by skin system on the [ElyPrismLauncher](https:/
 Download the latest version of Prism Launcher from https://prismlauncher.org/, install it, go through the quick setup, close the launcher, then execute this command in the terminal:
 ### Windows CMD:
 ```
-echo {"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "MSA"}],"formatVersion": 3} > %appdata%/PrismLauncher/accounts.json
+echo {
+    "accounts": [
+        {
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "msa-client-id": "",
+            "type": "MSA"
+        },
+        {
+            "active": true,
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "profile": {
+                "capes": [
+                ],
+                "id": "0c79d88a112537a0a302f01afa6bc94a",
+                "name": "YOUR-NICKNAME",
+                "skin": {
+                    "id": "",
+                    "url": "",
+                    "variant": ""
+                }
+            },
+            "type": "Offline",
+            "ygg": {
+                "extra": {
+                    "clientToken": "8be89b1112474b5fb8f061699ff41bda",
+                    "userName": "YOUR-NICKNAME"
+                },
+                "iat": 1738858981,
+                "token": "0"
+            }
+        }
+    ],
+    "formatVersion": 3
+} > %appdata%/PrismLauncher/accounts.json
 ```
 ### Linux Shell:
 ```
-echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "MSA"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
+echo '{
+    "accounts": [
+        {
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "msa-client-id": "",
+            "type": "MSA"
+        },
+        {
+            "active": true,
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "profile": {
+                "capes": [
+                ],
+                "id": "0c79d88a112537a0a302f01afa6bc94a",
+                "name": "YOUR-NICKNAME",
+                "skin": {
+                    "id": "",
+                    "url": "",
+                    "variant": ""
+                }
+            },
+            "type": "Offline",
+            "ygg": {
+                "extra": {
+                    "clientToken": "8be89b1112474b5fb8f061699ff41bda",
+                    "userName": "YOUR-NICKNAME"
+                },
+                "iat": 1738858981,
+                "token": "0"
+            }
+        }
+    ],
+    "formatVersion": 3
+}' > ~/.local/share/PrismLauncher/accounts.json
 ```
 ### Linux Shell (flatpak):
 ```
-echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "MSA"}],"formatVersion": 3}' > ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/accounts.json
+echo '{
+    "accounts": [
+        {
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "msa-client-id": "",
+            "type": "MSA"
+        },
+        {
+            "active": true,
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "profile": {
+                "capes": [
+                ],
+                "id": "0c79d88a112537a0a302f01afa6bc94a",
+                "name": "YOUR-NICKNAME",
+                "skin": {
+                    "id": "",
+                    "url": "",
+                    "variant": ""
+                }
+            },
+            "type": "Offline",
+            "ygg": {
+                "extra": {
+                    "clientToken": "8be89b1112474b5fb8f061699ff41bda",
+                    "userName": "YOUR-NICKNAME"
+                },
+                "iat": 1738858981,
+                "token": "0"
+            }
+        }
+    ],
+    "formatVersion": 3
+}' > ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/accounts.json
 ```
 ### macOS
 ```
-echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "MSA"}],"formatVersion": 3}' > ~/Library/Application\ Support/PrismLauncher/accounts.json
+echo '{
+    "accounts": [
+        {
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "msa-client-id": "",
+            "type": "MSA"
+        },
+        {
+            "active": true,
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "profile": {
+                "capes": [
+                ],
+                "id": "0c79d88a112537a0a302f01afa6bc94a",
+                "name": "YOUR-NICKNAME",
+                "skin": {
+                    "id": "",
+                    "url": "",
+                    "variant": ""
+                }
+            },
+            "type": "Offline",
+            "ygg": {
+                "extra": {
+                    "clientToken": "8be89b1112474b5fb8f061699ff41bda",
+                    "userName": "YOUR-NICKNAME"
+                },
+                "iat": 1738858981,
+                "token": "0"
+            }
+        }
+    ],
+    "formatVersion": 3
+}' > ~/Library/Application\ Support/PrismLauncher/accounts.json
 ```
 
 # Usage for Portable version
 Download the portable version of [Prism Launcher](https://prismlauncher.org/), run it, go through the quick setup, close the launcher, then execute this command in the terminal:
 ### Windows Portable (cd to installation path) CMD:
 ```
-echo {"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "MSA"}],"formatVersion": 3} > accounts.json
+echo {
+    "accounts": [
+        {
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "msa-client-id": "",
+            "type": "MSA"
+        },
+        {
+            "active": true,
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "profile": {
+                "capes": [
+                ],
+                "id": "0c79d88a112537a0a302f01afa6bc94a",
+                "name": "YOUR-NICKNAME",
+                "skin": {
+                    "id": "",
+                    "url": "",
+                    "variant": ""
+                }
+            },
+            "type": "Offline",
+            "ygg": {
+                "extra": {
+                    "clientToken": "8be89b1112474b5fb8f061699ff41bda",
+                    "userName": "YOUR-NICKNAME"
+                },
+                "iat": 1738858981,
+                "token": "0"
+            }
+        }
+    ],
+    "formatVersion": 3
+} > accounts.json
 ```
 ### Linux Portable (cd to installation path) Shell:
 ```
-echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "MSA"}],"formatVersion": 3}' > accounts.json
+echo '{
+    "accounts": [
+        {
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "msa-client-id": "",
+            "type": "MSA"
+        },
+        {
+            "active": true,
+            "entitlement": {
+                "canPlayMinecraft": true,
+                "ownsMinecraft": true
+            },
+            "profile": {
+                "capes": [
+                ],
+                "id": "0c79d88a112537a0a302f01afa6bc94a",
+                "name": "YOUR-NICKNAME",
+                "skin": {
+                    "id": "",
+                    "url": "",
+                    "variant": ""
+                }
+            },
+            "type": "Offline",
+            "ygg": {
+                "extra": {
+                    "clientToken": "8be89b1112474b5fb8f061699ff41bda",
+                    "userName": "YOUR-NICKNAME"
+                },
+                "iat": 1738858981,
+                "token": "0"
+            }
+        }
+    ],
+    "formatVersion": 3
+}' > accounts.json
 ```
 
 # Manual Installation
